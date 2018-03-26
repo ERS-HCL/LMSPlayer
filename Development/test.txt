@@ -1,0 +1,5 @@
+Defining the scope
+Which technology platform must be used for front-end and back-end
+What type of web solution should be
+What design will suit the most
+Whether the web solution should be static or dynamic

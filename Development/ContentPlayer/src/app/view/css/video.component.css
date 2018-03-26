@@ -1,0 +1,4 @@
+@import "~nouislider/distribute/nouislider.min.css";
+#slider .noUi-connects {
+	background: #bababa;
+}

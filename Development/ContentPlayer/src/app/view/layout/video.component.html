@@ -1,0 +1,48 @@
+<!-- p>
+  video works!
+</p>
+<div style="border: 1px solid black;">
+<nouislider id="slider" [connect]="[true, false]" [min]="0" [max]="15" [(ngModel)]="someRange"></nouislider>
+
+<input name="foo" type="text" id="seek-bar" min="0" max="100" value="0" step="1"/>
+</div-->
+<div id="sabseBadaContainer"
+	style="width: 100%; height: 100%; margin: auto; padding: 7px 7px 0 7px;">
+	<div id="exVideoContainer"
+		style="width: 79%; height: auto; background: purple; float: left; text-align: center;">
+		<video width="100%" style="max-width: 100%"
+			(timeupdate)="updateHandler($event)" (ended)="endedHandler($event)">
+			<source src="{{path}}" type="{{sourceType}}">
+		</video>
+		<!--<img width="100%" src="images/img.jpg">-->
+	</div>
+	<div id="emptyContainer"
+		style="width: 20%; height: auto; background: grey; float: right;">
+		<img width="100%" src="images/img.jpg">
+	</div>
+	<div id="controlsContainer"
+		style="display: flex; flex-wrap: wrap; margin: 0; clear: both; position: relative; top: 1%;">
+		<div id="playPauseContainer" class="col-sm-1"
+			style="background: #ccc; margin: 0; position: relative; line-height: 3em; text-align: center;">
+			<div style="display: block;">&#9654;</div>
+			<div style="display: none;">&#10074;&#10074;</div>
+		</div>
+		<div id="sliderContainer" class="col-sm-8"
+			style="background: #ddd; margin: 0; line-height: 3em; text-align: center;">
+			Slider
+			<nouislider id="slider" [connect]="[true, false]" [min]="0"
+				[max]="15" [(ngModel)]="someRange"></nouislider>
+		</div>
+		<div id="timeContainer" class="col-sm-1"
+			style="background: #ccc; margin: 0; line-height: 3em; text-align: center;">
+			00:00</div>
+		<div id="autoPlayOnOffContainer" class="col-sm-1"
+			style="background: #ddd; margin: 0; line-height: 3em; text-align: center;">
+			>></div>
+		<div id="volumeContainer" class="col-sm-1"
+			style="background: #ccc; margin: 0; padding-bottom: 3px; line-height: 3em; text-align: center;">
+			<img style="max-width: 100%" src="images/speaker.png">
+			<!--&#128266;-->
+		</div>
+	</div>
+</div>

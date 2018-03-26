@@ -1,0 +1,11 @@
+{
+	"environment": {
+		"standalone": {
+			"enabled": true,
+			"data": "{\"homePath\": \"home\",\"forwardEnabled\": true,\"playerPreview\": false,\"sessionId\":\"kdfjddfk43243kjfkj\",\"files\":[{\"startAt\": 0,\"segmentId\": 211,\"file\": \"http://localhost:8080/content0/\"},{\"startAt\": 0,\"segmentId\": 211,\"file\": \"http://localhost:8080/content11d1act4/\"},{\"startAt\": 0,\"segmentId\": 211,\"file\": \"http://localhost:8080/content11d3act2/\"},{\"startAt\": 0,\"segmentId\": 211,\"file\": \"http://localhost:8080/content11d3act3/\"},{\"startAt\": 19,\"segmentId\": 146,\"file\": \"http://localhost:8080/content9/\"},{\"startAt\": 19,\"segmentId\": 147,\"file\": \"http://localhost:8080/content09/\"},{\"startAt\": 19,\"segmentId\": 146,\"file\": \"http://localhost:8080/contentact4/\"},{\"startAt\": 19,\"segmentId\": 147,\"file\": \"http://localhost:8080/contentact5/\"},{\"startAt\": 19,\"segmentId\": 146,\"file\": \"http://localhost:8080/contentact6/\"},{\"startAt\": 0,\"segmentId\": 199,\"file\": \"http://localhost:8080/content1d2act1/\"},{\"startAt\": 0,\"segmentId\": 140,\"file\": \"http://localhost:8080/content00/\"},{\"startAt\": 12,\"segmentId\": 128,\"file\": \"http://localhost:8080/content0/\"},{\"startAt\": 0,\"segmentId\": 140,\"file\": \"http://localhost:8080/content00_1/\"},{\"startAt\": 0,\"segmentId\": 140,\"file\": \"http://localhost:8080/content00_2/\"},{\"startAt\": 19,\"segmentId\": 130,\"file\": \"http://localhost:8080/content01/\"}]}"
+		},
+		"lms": {
+			"enabled": false
+		}
+	}
+}
