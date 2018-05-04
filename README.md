@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
+
 		<style type="text/css">
 			body{font-family:Arial, Helvetica, sans-serif; font-size:1.2rem; margin: 0;}
 			.container{width:80%; margin:auto;}
@@ -16,8 +14,6 @@
 			ol li{list-style-type:decimal;}
 			img{width:100%; max-width:100%; height:auto;}
 		</style>
-	</head>
-	<body>
 		<div class="container">
 			<h1># LMSPlayer<br>LMS player can play content</h1>
 			<h3>Introduction</h3>
@@ -400,5 +396,3 @@
 			</p>
 			<br>
 		</div>
-	</body>
-</html>
