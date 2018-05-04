@@ -368,7 +368,7 @@
 				}
 			}
 			</pre>
-			<p>In <i>init.json</i> file, if player is running in LMS then <i>'LMS Enabled'</i> option is true, else <i>'Standalone Enabled'</i> is true.</p>
+			<p>>In <i>init.json</i> file, if player is running in LMS then <i>'LMS Enabled'</i> option is true, else <i>'Standalone Enabled'</i> is true.</p>
 
 			
 			<ul>
