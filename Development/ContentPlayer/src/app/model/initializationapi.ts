@@ -26,6 +26,27 @@ export class Helper {
 
 }
 
+export class Info {
+
+  constructor(id: string, data: any) {
+    this._id = id;
+    this._data = data;
+  }
+
+  private _id: string;
+
+  get id(): string {
+    return this._id;
+  }
+
+  private _data: any;
+
+  get data(): any {
+    return this._data;
+  }
+
+}
+
 export class InitializationAPI {
 
   constructor(homePath: string, forwardEnabled: boolean, playerPreview: boolean, sessionId: string, files: Array<Helper>) {

@@ -10,7 +10,7 @@ import { SignalRConfiguration } from '@dharapvj/ngx-signalr';
 
 export function createConfig(): SignalRConfiguration {
   const c = new SignalRConfiguration();
-  c.hubName = 'sr';
+  c.hubName = 'HTMLPlayerHub';
   // c.qs = { user: 'donald' };
   c.url = 'http://localhost:8082/signalr';
   c.logging = true;

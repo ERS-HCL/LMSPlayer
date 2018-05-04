@@ -1,5 +1,6 @@
 import {PlayerConstants} from '../common/playerconstants';
 import {Content, ContentDesign, ContentLogic, ContentData} from './content';
+import { ContentCollection } from './contentcollection';
 import {HttphandlerService} from './httphandler.service';
 import {Helper} from './initializationapi';
 import {Injectable} from '@angular/core';
@@ -7,7 +8,7 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class CommonloaderService {
   private httpHandler: HttphandlerService;
-  private screenData: Array<string>;
+  private screenData: any;
   private helper: Helper;
   private success;
   private failure;
@@ -29,8 +30,8 @@ export class CommonloaderService {
     console.log('CommonloaderService: baseLoaded - data = ', data);
     this.screenData = data;
     const localdata = [];
-    for (let i = 0; i < data.length; i++) {
-      localdata[i] = this.helper.file + data[i] + PlayerConstants.JSON_FILE_EXTENSION;
+    for (let i = 0; i < data.contents.length; i++) {
+      localdata[i] = this.helper.file + data.contents[i] + PlayerConstants.JSON_FILE_EXTENSION;
     }
     this.httpHandler.getMultiple(localdata, this.sectionsLoaded.bind(this), this.sectionsFailed.bind(this));
   }
@@ -64,12 +65,13 @@ export class CommonloaderService {
     console.log('CommonloaderService: subsectionsLoaded - data = ', data);
     console.log('CommonloaderService: subsectionsLoaded - data.length = ', data.length);
     console.log('CommonloaderService: subsectionsLoaded - data[2] = ', data[2]);
-    const contentCollection: Array<Content> = new Array<Content>();
+    const collection: Array<Content> = new Array<Content>();
+    const contentCollection: ContentCollection = new ContentCollection(this.screenData.autoplay, collection);
     while (data.length >= 3) {
       const cdesign: ContentDesign = new ContentDesign();
       const clogic: ContentLogic = new ContentLogic(data[2].type);
       const cdata: ContentData = new ContentData(data[0]);
-      contentCollection.push(new Content(this.helper.file + this.screenData.shift(), cdesign, cdata, clogic));
+      collection.push(new Content(this.helper.file + this.screenData.contents.shift(), cdesign, cdata, clogic));
       data.splice(0, 3);
     }
     this.success(contentCollection);

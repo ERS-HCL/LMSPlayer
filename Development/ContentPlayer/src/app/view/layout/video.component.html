@@ -9,8 +9,11 @@
 <div id="sabseBadaContainer"
 	style="width: 100%; height: 100%; margin: auto; padding: 7px 7px 0 7px;">
 	<div id="exVideoContainer"
-		style="width: 79%; height: auto; background: purple; float: left; text-align: center;">
-		<video width="100%" style="max-width: 100%"
+		style="width: 79%; height: 96%; background: purple; float: left; text-align: center;">
+		<video #mainVideo width="100%"
+			style="max-width: 100%; max-height: 100%;"
+			[(currentTime)]="currentTime"
+			(loadedmetadata)="loadedHandler($event)"
 			(timeupdate)="updateHandler($event)" (ended)="endedHandler($event)">
 			<source src="{{path}}" type="{{sourceType}}">
 		</video>
@@ -21,28 +24,37 @@
 		<img width="100%" src="images/img.jpg">
 	</div>
 	<div id="controlsContainer"
-		style="display: flex; flex-wrap: wrap; margin: 0; clear: both; position: relative; top: 1%;">
+		style="display: flex; flex-wrap: wrap; margin: 0; clear: both; position: relative; height: 4%;">
 		<div id="playPauseContainer" class="col-sm-1"
-			style="background: #ccc; margin: 0; position: relative; line-height: 3em; text-align: center;">
-			<div style="display: block;">&#9654;</div>
-			<div style="display: none;">&#10074;&#10074;</div>
+			(click)="updatePlay($event)"
+			style="background: #ccc; margin: 0; position: relative; display: grid; align-items: center; justify-items: center; text-align: center;">
+			<div [ngStyle]="{'display': isPlaying ? 'none' : 'block'}"
+				style="cursor: pointer">&#9654;</div>
+			<div [ngStyle]="{'display': !isPlaying ? 'none' : 'block'}"
+				style="cursor: pointer">&#10074;&#10074;</div>
 		</div>
-		<div id="sliderContainer" class="col-sm-8"
-			style="background: #ddd; margin: 0; line-height: 3em; text-align: center;">
-			Slider
-			<nouislider id="slider" [connect]="[true, false]" [min]="0"
-				[max]="15" [(ngModel)]="someRange"></nouislider>
+		<div id="sliderContainer" class="col-sm-7"
+			style="background:#ddd; margin:0; display: grid; align-items: center; justify-items: center; text-align:center;">
+			<input type="text" id="seek-bar" min="0" max="100"
+				value="{{progressBarValue}}" step="1" />
+			<!-- nouislider id="slider" [connect]="[true, false]" [min]="0"
+				[max]="100" [(ngModel)]="progressBarValue"></nouislider-->
 		</div>
 		<div id="timeContainer" class="col-sm-1"
-			style="background: #ccc; margin: 0; line-height: 3em; text-align: center;">
-			00:00</div>
-		<div id="autoPlayOnOffContainer" class="col-sm-1"
-			style="background: #ddd; margin: 0; line-height: 3em; text-align: center;">
-			>></div>
+			style="background:#ccc; margin:0; display: grid; align-items: center; justify-items: center; text-align:center;">{{time}}
+		</div>
 		<div id="volumeContainer" class="col-sm-1"
-			style="background: #ccc; margin: 0; padding-bottom: 3px; line-height: 3em; text-align: center;">
-			<img style="max-width: 100%" src="images/speaker.png">
+			style="background:#ccc; margin:0; display: grid; align-items: center; justify-items: center; text-align:center;">
+			<img style="max-width: 100%" src="images/speaker.png"> <input
+				type="range" id="volume-bar" min="0" max="1" step="0.1" value="1"
+				(change)="updateVolume($event)" />
 			<!--&#128266;-->
 		</div>
+		<div id="autoPlayOnOffContainer" class="col-sm-1"
+			style="background:#ddd; margin:0; display: grid; align-items: center; justify-items: center; text-align:center;">>>
+		</div>
+		<div id="closeContainer" class="col-sm-1" (click)="close($event)"
+			style="background: #ddd; margin: 0; display: grid; align-items: center; justify-items: center; text-align: center;">
+			X</div>
 	</div>
 </div>

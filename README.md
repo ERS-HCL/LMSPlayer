@@ -270,33 +270,33 @@
 				<b>'data'</b> points to a json file (<i>Q1_data.json</i>) which is inside the folder name <b>Q1</b>.<br>
 				The file <b>Q1_data.json</b> consists of all the assets (Audio, Video, Images) required in a template. <br>The structure of <i>Q1_data.json</i> is shown below – 
 				<pre>
-				{
-					"id": "Q001",
-					"ques": {
-						"text": "",
-						"sound": "http://localhost:8080/tempfive/Q1.ogg",
-						"imgsrc": "http://localhost:8080/tempfive/q1.png",
-						"imgsrc_hover": "http://localhost:8080/tempfive/q1_hover.svg",
-						"imgsrc_original": "http://localhost:8080/tempfive/q1.png"
-					},
-					"options": [{
-							"id": "001",
-							"custom_id": "0",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt1.svg"
-						},{
-							"id": "002",
-							"custom_id": "1",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt2.svg"
-						},{
-							"id": "003",
-							"custom_id": "2",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt3.svg"
-						}
-					],
-					"feedback": {
-						"correct_ans_index": "2"
-					}
-				}
+	{
+		"id": "Q001",
+		"ques": {
+			"text": "",
+			"sound": "http://localhost:8080/tempfive/Q1.ogg",
+			"imgsrc": "http://localhost:8080/tempfive/q1.png",
+			"imgsrc_hover": "http://localhost:8080/tempfive/q1_hover.svg",
+			"imgsrc_original": "http://localhost:8080/tempfive/q1.png"
+		},
+		"options": [{
+				"id": "001",
+				"custom_id": "0",
+				"imgsrc": "http://localhost:8080/tempfive/q1_opt1.svg"
+			},{
+				"id": "002",
+				"custom_id": "1",
+				"imgsrc": "http://localhost:8080/tempfive/q1_opt2.svg"
+			},{
+				"id": "003",
+				"custom_id": "2",
+				"imgsrc": "http://localhost:8080/tempfive/q1_opt3.svg"
+			}
+		],
+		"feedback": {
+			"correct_ans_index": "2"
+		}
+	}
 				</pre>
 			</blockquote></p><br>
 			<p><b>> Design</b><br>
@@ -331,10 +331,8 @@
 				</blockquote>
 			</p><br>
 			<p></p>
-
-			
 			<br>
-			<h3>Template - Definition and Types</h3>
+			<h3>> Template - Definition and Types</h3>
 			<p>A Template is a set of predefined functionalities like <i>'Multiple choice questions'</i>, <i>'Arrange the sentence'</i> etc. All the templates have different functionalities as shown below–
 			</p>
 			<ul>

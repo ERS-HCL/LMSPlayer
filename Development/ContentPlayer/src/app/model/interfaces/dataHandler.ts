@@ -1,5 +1,6 @@
 export interface DataHandler {
-  loadData(data, success, failure);
-  dataLoadedSuccess(success);
-  dataLoadedFailure(failure);
+  loadData(data, listener, success, failure);
+  sendData(id: string, data);
+  dataLoadedSuccess();
+  dataLoadedFailure();
 }
