@@ -359,7 +359,7 @@
 				"environment": {
 					"standalone": {
 						"enabled": true,
-						"data": "{\"homePath\": \"home\",\"forwardEnabled\": true,\"playerPreview\": <br>false,\"sessionId\":\"kdfjddfk43243kjfkj\",\"files\":[{\"startAt\": 0,\"segmentId\": 201,\"file\": \"<br>http://localhost:8080/content1/\"},{\"startAt\": 0,\"segmentId\": 202,\"file\": \"http://localhost:8080/content2/\"}]}"
+						"data": "{\"homePath\": \"home\",\"forwardEnabled\": true,\"playerPreview\": false,\"sessionId\":\"kdfjddfk43243kjfkj\",\"files\":[{\"startAt\": 0,\"segmentId\": 201,\"file\": \"http://localhost:8080/content1/\"},{\"startAt\": 0,\"segmentId\": 202,\"file\": \"http://localhost:8080/content2/\"}]}"
 					},
 					
 					"lms": {
