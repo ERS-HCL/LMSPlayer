@@ -368,8 +368,6 @@
 			}
 			</pre>
 			<p>In <i>init.json</i> file, if player is running in LMS then <i>'LMS Enabled'</i> option is true, else <i>'Standalone Enabled'</i> is true.</p>
-
-			
 			<ul>
 				<li>Files <br><blockquote>In <i>init.json</i>, <b>'files'</b> shows list of all content folders.</blockquote></li>
 				<li>startAt <br><blockquote>This shows the 'Time' in milliseconds, which specifies the begining time of the video. For example if you provide startAt value to 1000, then it will start video from 1 second.</blockquote></li>
