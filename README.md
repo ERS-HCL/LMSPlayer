@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<style type="text/css">
-			body{font-family:Arial, Helvetica, sans-serif; font-size:1.2rem; margin: 0;}
-			.container{width:80%; margin:auto;}
-			h3{background:#eee; padding:10px 5px;}
-			table{border:solid 1px #aaa;}
-			table img{width:auto;}
-			th{background:#feeace;}
-			td{padding:4px;}
-			table.centre td{text-align:center;}
-			p,li{line-height:2;}
-			ul li{margin:15px 0; list-style-type:square;}
-			ul ul li{list-style-type:circle; line-height:1;}
-			ol li{list-style-type:decimal;}
-			img{width:100%; max-width:100%; height:auto;}
-		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -284,7 +269,7 @@
 			<blockquote>
 				<b>'data'</b> points to a json file (<i>Q1_data.json</i>) which is inside the folder name <b>Q1</b>.<br>
 				The file <b>Q1_data.json</b> consists of all the assets (Audio, Video, Images) required in a template. <br>The structure of <i>Q1_data.json</i> is shown below – 
-				
+				<pre>
 				{
 					"id": "Q001",
 					"ques": {
@@ -312,9 +297,8 @@
 						"correct_ans_index": "2"
 					}
 				}
-				
-			</blockquote></p><br>	
-			
+				</pre>
+			</blockquote></p><br>
 			<p><b>> Design</b><br>
 			<blockquote>Here we put all the <b>Design</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.</blockquote></p>
 			<br>
