@@ -361,14 +361,13 @@
 						"enabled": true,
 						"data": "{\"homePath\": \"home\",\"forwardEnabled\": true,\"playerPreview\": false,\"sessionId\":\"kdfjddfk43243kjfkj\",\"files\":[{\"startAt\": 0,\"segmentId\": 201,\"file\": \"http://localhost:8080/content1/\"},{\"startAt\": 0,\"segmentId\": 202,\"file\": \"http://localhost:8080/content2/\"}]}"
 					},
-					
 					"lms": {
 						"enabled": false
 					}
 				}
 			}
 			</pre>
-			<p>>In <i>init.json</i> file, if player is running in LMS then <i>'LMS Enabled'</i> option is true, else <i>'Standalone Enabled'</i> is true.</p>
+			<p>In <i>init.json</i> file, if player is running in LMS then <i>'LMS Enabled'</i> option is true, else <i>'Standalone Enabled'</i> is true.</p>
 
 			
 			<ul>
