@@ -287,7 +287,6 @@
 			<blockquote>
 				<b>'data'</b> points to a json file (<i>Q1_data.json</i>) which is inside the folder name <b>Q1</b>.<br>
 				The file <b>Q1_data.json</b> consists of all the assets (Audio, Video, Images) required in a template. <br>The structure of <i>Q1_data.json</i> is shown below – 
- 
 				<pre>
 				{
 					"id": "Q001",
@@ -319,7 +318,8 @@
 					}
 				}
 				</pre>
-			</blockquote></p><br>		
+			</blockquote></p><br>	
+			
 			<p><b>> Design</b><br><blockquote>Here we put all the <b>Design</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.</blockquote></p><br>
 			<p><b>> Logic</b><br>
 				<blockquote>Here we put all the <b>Logic</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.<br>The structure of <i>logic.json</i> looks as below:<br>
