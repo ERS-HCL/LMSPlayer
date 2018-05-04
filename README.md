@@ -312,8 +312,7 @@
 						}
 					],
 					"feedback": {
-						"correct_ans_index": "2",
-						
+						"correct_ans_index": "2"
 					}
 				}
 				</pre>
