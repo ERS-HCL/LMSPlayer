@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "@dharapvj/ngx-signalr": "^3.0.0",
-    "bootstrap-slider": "^10.0.0",
+    "prateekniceguy/bootstrap-slider": "^10.0.0",
     "core-js": "^2.4.1",
     "jquery": "^3.3.1",
     "ng2-nouislider": "^1.7.7",

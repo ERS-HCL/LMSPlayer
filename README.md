@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
 		<style type="text/css">
 			body{font-family:Arial, Helvetica, sans-serif; font-size:1.2rem; margin: 0;}
 			.container{width:80%; margin:auto;}
@@ -14,6 +16,8 @@
 			ol li{list-style-type:decimal;}
 			img{width:100%; max-width:100%; height:auto;}
 		</style>
+	</head>
+	<body>
 		<div class="container">
 			<h1># LMSPlayer<br>LMS player can play content</h1>
 			<h3>Introduction</h3>
@@ -281,38 +285,13 @@
 				<b>'data'</b> points to a json file (<i>Q1_data.json</i>) which is inside the folder name <b>Q1</b>.<br>
 				The file <b>Q1_data.json</b> consists of all the assets (Audio, Video, Images) required in a template. <br>The structure of <i>Q1_data.json</i> is shown below – 
 				<pre>
-				{
-					"id": "Q001",
-					"ques": {
-						"text": "",
-						"sound": "http://localhost:8080/tempfive/Q1.ogg",
-						"imgsrc": "http://localhost:8080/tempfive/q1.png",
-						"imgsrc_hover": "http://localhost:8080/tempfive/q1_hover.svg",
-						"imgsrc_original": "http://localhost:8080/tempfive/q1.png"
-					},
-					"options": [{
-							"id": "001",
-							"custom_id": "0",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt1.svg"
-						},{
-							"id": "002",
-							"custom_id": "1",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt2.svg"
-						},{
-							"id": "003",
-							"custom_id": "2",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt3.svg"
-						}
-					],
-					"feedback": {
-						"correct_ans_index": "2"
-					}
-				}
+				
 				</pre>
 			</blockquote></p><br>	
 			
 			<p><b>> Design</b><br>
-			<blockquote>Here we put all the <b>Design</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.</blockquote></p><br>
+			<blockquote>Here we put all the <b>Design</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.</blockquote></p>
+			<br>
 			<p><b>> Logic</b><br>
 				<blockquote>Here we put all the <b>Logic</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.<br>The structure of <i>logic.json</i> looks as below:<br>
 				<pre>
@@ -396,3 +375,5 @@
 			</p>
 			<br>
 		</div>
+	</body>
+</html>
