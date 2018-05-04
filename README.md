@@ -300,18 +300,17 @@
 					"options": [{
 							"id": "001",
 							"custom_id": "0",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt1.svg",
+							"imgsrc": "http://localhost:8080/tempfive/q1_opt1.svg"
 						},{
 							"id": "002",
 							"custom_id": "1",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt2.svg",
+							"imgsrc": "http://localhost:8080/tempfive/q1_opt2.svg"
 						},{
 							"id": "003",
 							"custom_id": "2",
-							"imgsrc": "http://localhost:8080/tempfive/q1_opt3.svg",
+							"imgsrc": "http://localhost:8080/tempfive/q1_opt3.svg"
 						}
-					], 
-					
+					],
 					"feedback": {
 						"correct_ans_index": "2",
 						
