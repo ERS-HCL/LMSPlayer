@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head> 
-		<title>User Manual - Shiksha Player</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
 		<style type="text/css">
 			body{font-family:Arial, Helvetica, sans-serif; font-size:1.2rem; margin: 0;}
 			.container{width:80%; margin:auto;}
@@ -318,7 +315,8 @@
 				</pre>
 			</blockquote></p><br>	
 			
-			<p><b>> Design</b><br><blockquote>Here we put all the <b>Design</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.</blockquote></p><br>
+			<p><b>> Design</b><br>
+			<blockquote>Here we put all the <b>Design</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.</blockquote></p><br>
 			<p><b>> Logic</b><br>
 				<blockquote>Here we put all the <b>Logic</b> configuration to change the <i>look and feel</i> <b>dynamically</b>.<br>The structure of <i>logic.json</i> looks as below:<br>
 				<pre>
