@@ -1,0 +1,26 @@
+{
+  "name": "content",
+  "version": "1.0.1",
+  "description": "content",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.3",
+    "connect": "^3.6.0",
+    "express": "^4.15.3",
+    "serve-static": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "LMSPlayer"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "Prateek Verma",
+  "license": "MIT"
+}
